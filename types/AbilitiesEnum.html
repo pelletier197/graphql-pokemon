@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Magidoc" />
+    <meta
+      name="generator-url"
+      content="https://github.com/magidoc-org/magidoc"
+    />
+    
+    <meta http-equiv="content-security-policy" content="">
+		<link href="/graphql-pokemon/_app/immutable/assets/_layout-11b83c44.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/_commonjsHelpers-43b693e1.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/ChevronDown-4e074f2b.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/_page-e20843b5.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/PreviousNextPage-323e68a4.css" rel="stylesheet">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/start-3c68b456.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/paths-9b8889ea.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/singletons-50e8e493.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/index-656c7529.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/control-ba37bfb4.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/components/pages/_layout.svelte-860aa501.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/_commonjsHelpers-6e9e519b.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/ChevronDown-554ab0ca.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/prism-json-f6ca42ec.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/variables-e476db53.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/definition-b9b4841e.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/pages-c27bb3eb.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/model-a6e09c8b.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/Button-aa525aa2.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/stores-da29c498.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/components/pages/types/_type_/_page.svelte-6235e9f8.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/PreviousNextPage-e58fc778.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/ArgsList-c7b97515.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/modules/pages/types/_type_/_page.ts-d5b36102.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/index-ae603ba0.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/_page-09055112.js"><title>Type - AbilitiesEnum</title><!-- HEAD_svelte-w4mdaz_START --><meta name="keywords" content="graphql,documentation,docs,api,pokemon,favware,favna,static,javascript,typescript,nodejs"><meta name="description" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="og:title" content="GraphQL Pokémon"><meta name="og:type" content="website"><meta name="og:image" content="https://cdn.favware.tech/img/gqlp.png"><meta name="og:site_name" content="GraphQL Pokémon"><meta name="og:description" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="GraphQL Pokémon"><meta name="application-name" content="GraphQL Pokémon"><meta name="identifier-URL" content="https://graphqlpokemon.js.org"><meta name="og:email" content="support@favware.tech"><meta name="og:image:alt" content="OpenGraphImage"><meta name="og:image:height" content="1836"><meta name="og:image:width" content="1836"><meta name="og:locale" content="en_US"><meta name="reply-to" content="support@favware.tech"><meta name="revisit-after" content="7 days"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="@favna_"><meta name="twitter:image" content="https://cdn.favware.tech/img/gqlp.png"><meta name="twitter:site" content="@favna_"><meta name="audience" content="all"><meta name="author" content="Favware"><meta name="coverage" content="Worldwide"><meta name="designer" content="Favware, Sunny Pelletier"><meta name="distribution" content="Global"><meta name="googlebot" content="index,follow"><meta name="HandheldFriendly" content="True"><meta name="owner" content="Favware, support@favware.tech"><meta name="rating" content="safe for kids"><meta name="robots" content="archive,follow,imageindex,index,odp,snippet,translate"><meta name="shortlink" content="https://graphqlpokemon.js.org"><meta name="subject" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="summary" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="target" content="all"><meta name="url" content="https://graphqlpokemon.js.org"><link rel="icon" href="https://cdn.favware.tech/img/gqlp.png"><!-- HEAD_svelte-w4mdaz_END --><!-- HEAD_svelte-31uzcn_START --><!-- HEAD_svelte-31uzcn_END -->
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+<header aria-label="" class="bx--header">
+  
+  <a href="/graphql-pokemon" class="bx--header__name">
+    <div slot="platform" class="header-logo-wrapper svelte-1kuxzto"><img src="https://raw.githubusercontent.com/magidoc-org/magidoc/main/logo/logo_horizontal.png" alt="Magidoc" class="header-logo"></div></a>
+  <div class="bx--header__global"><button type="button" label="Search" class="bx--header__action ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden><path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path></svg>
+  </button>
+    
+
+<button type="button" class="bx--header__action   svelte-187bdaq">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden><path d="M14 4H18V8H14zM4 4H8V8H4zM24 4H28V8H24zM14 14H18V18H14zM4 14H8V18H4zM24 14H28V18H24zM14 24H18V28H14zM4 24H8V28H4zM24 24H28V28H24z"></path></svg>
+    
+  
+    
+  </button>
+</div></header>
+
+
+
+
+
+  <div style="false" class="bx--side-nav__overlay"></div>
+<nav aria-hidden class="bx--side-nav__navigation bx--side-nav bx--side-nav--ux  bx--side-nav--collapsed "><ul class="bx--side-nav__items">
+        <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
+    <span class="bx--side-nav__submenu-title">Introduction</span>
+    <div class="bx--side-nav__icon bx--side-nav__icon--small bx--side-nav__submenu-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div></button>
+  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/introduction/welcome" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Welcome</span></a></li>
+        </ul></li>
+        <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
+    <span class="bx--side-nav__submenu-title">Queries</span>
+    <div class="bx--side-nav__icon bx--side-nav__icon--small bx--side-nav__submenu-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div></button>
+  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getAbility" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getAbility</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getAllPokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getAllPokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyAbility" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyAbility</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyItem" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyItem</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyPokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyPokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getItem" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getItem</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getPokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getPokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getPokemonByDexNumber" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getPokemonByDexNumber</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getTypeMatchup" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getTypeMatchup</span></a></li>
+        </ul></li>
+        <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
+    <span class="bx--side-nav__submenu-title">Types</span>
+    <div class="bx--side-nav__icon bx--side-nav__icon--small bx--side-nav__submenu-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div></button>
+  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Abilities" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Abilities</span></a></li><li class="bx--side-nav__menu-item"><a aria-current="page" href="/graphql-pokemon/types/AbilitiesEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">AbilitiesEnum</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Ability" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Ability</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Boolean" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Boolean</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/CatchRate" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">CatchRate</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/EvYields" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">EvYields</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Flavor" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Flavor</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Float" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Float</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Gender" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Gender</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/GenerationalPokemonLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">GenerationalPokemonLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Int" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Int</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Item" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Item</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/ItemsEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">ItemsEnum</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Learnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Learnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/LearnsetLevelUpMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">LearnsetLevelUpMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/LearnsetMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">LearnsetMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Move" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Move</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/MovesEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">MovesEnum</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Pokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Pokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/PokemonEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">PokemonEnum</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/PokemonLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">PokemonLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/PokemonType" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">PokemonType</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Query" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Query</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Stats" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Stats</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/String" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">String</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/TypeEffectiveness" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">TypeEffectiveness</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/TypeMatchup" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">TypeMatchup</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/TypesEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">TypesEnum</span></a></li>
+        </ul></li></ul></nav>
+
+<main id="main-content" style="margin-left: 0; undefined" class="bx--content"><div class="bx--grid"><div class="bx--row"><div class="bx--col">
+
+<section><div class="parent svelte-1ltydza"><h1 id="title" class="header header-base svelte-1ltydza">AbilitiesEnum
+    
+<div id="ccs-0.6zkditf0css" class="bx--tag        bx--tag--teal      ">
+    <span>Enum</span></div></h1>
+  
+</div>
+
+  <p class="md-paragraph svelte-uzcm98">The supported abilities
+</p>
+
+  <div class="parent svelte-1ltydza"><h2 id="possible-values" class="header header-base svelte-1ltydza">Possible Values</h2>
+  <h2 class="header-base header-hashtag svelte-1ltydza"><a href="#possible-values" class="hashtag svelte-1ltydza">#</a></h2>
+</div>
+
+  
+<div role="table" class="bx--structured-list  bx--structured-list--condensed ">
+<div role="rowgroup" class="bx--structured-list-tbody">
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">adaptability</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">aerilate</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">aftermath</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">airlock</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">analytic</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">angerpoint</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">anticipation</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">arenatrap</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">aromaveil</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">asoneasoneglastrier</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">asonespectrier</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">aurabreak</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">baddreams</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">ballfetch</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">battery</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">battlearmor</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">battlebond</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">beastboost</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">berserk</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">bigpecks</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">blaze</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">bulletproof</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">cheekpouch</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">chillingneigh</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">chlorophyll</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">clearbody</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">cloudnine</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">colorchange</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">comatose</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">competitive</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">compoundeyes</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">contrary</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">corrosion</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">cottondown</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">curiousmedicine</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">cursedbody</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">cutecharm</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">damp</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">dancer</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">darkaura</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">dauntlessshield</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">dazzling</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">defeatist</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">defiant</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">deltastream</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">desolateland</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">disguise</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">download</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">dragonsmaw</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">drizzle</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">drought</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">dryskin</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">earlybird</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">effectspore</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">electricsurge</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">emergencyexit</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">fairyaura</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">filter</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">flamebody</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">flareboost</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">flashfire</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">flowergift</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">flowerveil</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">fluffy</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">forecast</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">forewarn</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">friendguard</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">frisk</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">fullmetalbody</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">furcoat</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">galewings</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">galvanize</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">gluttony</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">gooey</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">gorillatactics</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">grasspelt</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">grassysurge</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">grimneigh</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">gulpmissile</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">guts</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">harvest</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">healer</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">heatproof</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">heavymetal</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">honeygather</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">hugepower</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">hungerswitch</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">hustle</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">hydration</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">hypercutter</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">icebody</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">iceface</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">icescales</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">illuminate</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">illusion</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">immunity</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">imposter</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">infiltrator</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">innardsout</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">innerfocus</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">insomnia</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">intimidate</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">intrepidsword</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">ironbarbs</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">ironfist</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">justified</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">keeneye</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">klutz</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">leafguard</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">levitate</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">libero</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">lightmetal</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">lightningrod</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">limber</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">liquidooze</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">liquidvoice</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">longreach</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">magicbounce</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">magicguard</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">magician</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">magmaarmor</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">magnetpull</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">marvelscale</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">megalauncher</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">merciless</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">mimicry</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">minus</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">mirrorarmor</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">mistysurge</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">moldbreaker</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">moody</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">motordrive</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">mountaineer</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">moxie</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">multiscale</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">multitype</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">mummy</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">naturalcure</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">neuroforce</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">noability</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">neutralizinggas</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">noguard</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">normalize</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">oblivious</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">overcoat</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">overgrow</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">owntempo</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">parentalbond</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">persistent</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">pastelveil</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">perishbody</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">pickpocket</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">pickup</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">pixilate</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">plus</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">poisonheal</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">poisonpoint</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">poisontouch</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">powerconstruct</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">powerofalchemy</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">powerspot</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">prankster</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">pressure</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">primordialsea</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">prismarmor</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">propellertail</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">protean</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">psychicsurge</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">punkrock</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">purepower</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">queenlymajesty</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">quickdraw</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">quickfeet</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">rkssystem</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">raindish</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">rattled</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">rebound</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">receiver</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">reckless</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">refrigerate</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">regenerator</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">ripen</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">rivalry</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">rockhead</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">roughskin</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">runaway</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sandforce</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sandrush</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sandspit</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sandstream</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sandveil</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sapsipper</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">schooling</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">scrappy</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">screencleaner</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">serenegrace</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shadowshield</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shadowtag</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shedskin</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sheerforce</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shellarmor</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shielddust</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shieldsdown</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">simple</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">skilllink</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">slowstart</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">slushrush</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sniper</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">snowcloak</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">snowwarning</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">solarpower</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">solidrock</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">soulheart</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">soundproof</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">speedboost</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stakeout</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stall</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stalwart</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stamina</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stancechange</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">static</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">steadfast</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">steamengine</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">steelworker</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">steelyspirit</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stench</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stickyhold</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">stormdrain</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">strongjaw</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sturdy</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">suctioncups</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">superluck</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">surgesurfer</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">swarm</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sweetveil</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">swiftswim</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">symbiosis</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">synchronize</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">tangledfeet</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">tanglinghair</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">technician</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">telepathy</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">teravolt</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">thickfat</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">tintedlens</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">torrent</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">toughclaws</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">toxicboost</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">trace</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">transistor</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">triage</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">truant</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">turboblaze</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">unaware</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">unburden</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">unnerve</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">unseenfist</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">victorystar</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">vitalspirit</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">voltabsorb</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">wanderingspirit</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">waterabsorb</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">waterbubble</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">watercompaction</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">waterveil</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">weakarmor</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">whitesmoke</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">wimpout</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">wonderguard</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">wonderskin</span>
+              </p>
+            
+          </div>
+        </div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">zenmode</span>
+              </p>
+            
+          </div>
+        </div></div></div></section>
+
+<div class="parent svelte-1ltydza"><h2 id="usages" class="header header-base svelte-1ltydza">Usages</h2>
+  <h2 class="header-base header-hashtag svelte-1ltydza"><a href="#usages" class="hashtag svelte-1ltydza">#</a></h2>
+</div>
+<div class="parent svelte-1ltydza"><h4 id="references" class="header header-base svelte-1ltydza">References</h4>
+  <h4 class="header-base header-hashtag svelte-1ltydza"><a href="#references" class="hashtag svelte-1ltydza">#</a></h4>
+</div>
+
+<ul class="markdown-list-style bx--list--unordered  " style="counter-reset: item 0">
+<li class="markdown-list-item bx--list__item">Argument <em>ability</em> of field <em>getAbility</em>
+        from type 
+<a href="/graphql-pokemon/types/Query" class="bx--link     ">Query
+    </a></li></ul>
+<ul class="markdown-list-style bx--list--unordered  " style="counter-reset: item 0">
+<li class="markdown-list-item bx--list__item">Field <em>key</em> from 
+<a href="/graphql-pokemon/types/Ability" class="bx--link     ">Ability
+    </a></li></ul>
+
+
+
+<hr class="footer-hr svelte-19tre3a">
+
+<div class="wrapper svelte-19tre3a"><div class="previous direction-wrapper svelte-19tre3a"><div class="direction svelte-19tre3a"><strong>Previous
+
+          </strong></div>
+      <a href="/graphql-pokemon/types/Abilities" class="title svelte-19tre3a"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden class="previous-next-arrow"><path d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"></path></svg></span>
+        <p>Abilities</p></a></div>
+
+  <div class="next direction-wrapper svelte-19tre3a"><div class="direction svelte-19tre3a"><strong>Next
+          </strong></div>
+      <a href="/graphql-pokemon/types/Ability" class="title svelte-19tre3a"><p>Ability</p>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden class="previous-next-arrow"><path d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"></path></svg></span></a></div>
+</div></div></div></div></main>
+
+
+		<script type="module" data-sveltekit-hydrate="1t3cmtz">
+			import { start } from "/graphql-pokemon/_app/immutable/start-3c68b456.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 7],
+					params: {type:"AbilitiesEnum"},
+					route: {"id":"/types/[type]"},
+					data: [null,null],
+					form: null
+				},
+				paths: {"base":"/graphql-pokemon","assets":"/graphql-pokemon"},
+				target: document.querySelector('[data-sveltekit-hydrate="1t3cmtz"]').parentNode,
+				version: "1670372709531"
+			});
+		</script>
+	</body>
+</html>

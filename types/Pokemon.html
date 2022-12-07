@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Magidoc" />
+    <meta
+      name="generator-url"
+      content="https://github.com/magidoc-org/magidoc"
+    />
+    
+    <meta http-equiv="content-security-policy" content="">
+		<link href="/graphql-pokemon/_app/immutable/assets/_layout-11b83c44.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/_commonjsHelpers-43b693e1.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/ChevronDown-4e074f2b.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/_page-e20843b5.css" rel="stylesheet">
+		<link href="/graphql-pokemon/_app/immutable/assets/PreviousNextPage-323e68a4.css" rel="stylesheet">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/start-3c68b456.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/paths-9b8889ea.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/singletons-50e8e493.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/index-656c7529.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/control-ba37bfb4.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/components/pages/_layout.svelte-860aa501.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/_commonjsHelpers-6e9e519b.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/ChevronDown-554ab0ca.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/prism-json-f6ca42ec.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/variables-e476db53.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/definition-b9b4841e.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/pages-c27bb3eb.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/model-a6e09c8b.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/Button-aa525aa2.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/stores-da29c498.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/components/pages/types/_type_/_page.svelte-6235e9f8.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/PreviousNextPage-e58fc778.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/ArgsList-c7b97515.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/modules/pages/types/_type_/_page.ts-d5b36102.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/index-ae603ba0.js">
+		<link rel="modulepreload" href="/graphql-pokemon/_app/immutable/chunks/_page-09055112.js"><title>Type - Pokemon</title><!-- HEAD_svelte-w4mdaz_START --><meta name="keywords" content="graphql,documentation,docs,api,pokemon,favware,favna,static,javascript,typescript,nodejs"><meta name="description" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="og:title" content="GraphQL Pokémon"><meta name="og:type" content="website"><meta name="og:image" content="https://cdn.favware.tech/img/gqlp.png"><meta name="og:site_name" content="GraphQL Pokémon"><meta name="og:description" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="GraphQL Pokémon"><meta name="application-name" content="GraphQL Pokémon"><meta name="identifier-URL" content="https://graphqlpokemon.js.org"><meta name="og:email" content="support@favware.tech"><meta name="og:image:alt" content="OpenGraphImage"><meta name="og:image:height" content="1836"><meta name="og:image:width" content="1836"><meta name="og:locale" content="en_US"><meta name="reply-to" content="support@favware.tech"><meta name="revisit-after" content="7 days"><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="@favna_"><meta name="twitter:image" content="https://cdn.favware.tech/img/gqlp.png"><meta name="twitter:site" content="@favna_"><meta name="audience" content="all"><meta name="author" content="Favware"><meta name="coverage" content="Worldwide"><meta name="designer" content="Favware, Sunny Pelletier"><meta name="distribution" content="Global"><meta name="googlebot" content="index,follow"><meta name="HandheldFriendly" content="True"><meta name="owner" content="Favware, support@favware.tech"><meta name="rating" content="safe for kids"><meta name="robots" content="archive,follow,imageindex,index,odp,snippet,translate"><meta name="shortlink" content="https://graphqlpokemon.js.org"><meta name="subject" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="summary" content="Extensive Pokémon GraphQL API with data for all generations."><meta name="target" content="all"><meta name="url" content="https://graphqlpokemon.js.org"><link rel="icon" href="https://cdn.favware.tech/img/gqlp.png"><!-- HEAD_svelte-w4mdaz_END --><!-- HEAD_svelte-31uzcn_START --><!-- HEAD_svelte-31uzcn_END -->
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+<header aria-label="" class="bx--header">
+  
+  <a href="/graphql-pokemon" class="bx--header__name">
+    <div slot="platform" class="header-logo-wrapper svelte-1kuxzto"><img src="https://raw.githubusercontent.com/magidoc-org/magidoc/main/logo/logo_horizontal.png" alt="Magidoc" class="header-logo"></div></a>
+  <div class="bx--header__global"><button type="button" label="Search" class="bx--header__action ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden><path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path></svg>
+  </button>
+    
+
+<button type="button" class="bx--header__action   svelte-187bdaq">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden><path d="M14 4H18V8H14zM4 4H8V8H4zM24 4H28V8H24zM14 14H18V18H14zM4 14H8V18H4zM24 14H28V18H24zM14 24H18V28H14zM4 24H8V28H4zM24 24H28V28H24z"></path></svg>
+    
+  
+    
+  </button>
+</div></header>
+
+
+
+
+
+  <div style="false" class="bx--side-nav__overlay"></div>
+<nav aria-hidden class="bx--side-nav__navigation bx--side-nav bx--side-nav--ux  bx--side-nav--collapsed "><ul class="bx--side-nav__items">
+        <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
+    <span class="bx--side-nav__submenu-title">Introduction</span>
+    <div class="bx--side-nav__icon bx--side-nav__icon--small bx--side-nav__submenu-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div></button>
+  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/introduction/welcome" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Welcome</span></a></li>
+        </ul></li>
+        <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
+    <span class="bx--side-nav__submenu-title">Queries</span>
+    <div class="bx--side-nav__icon bx--side-nav__icon--small bx--side-nav__submenu-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div></button>
+  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getAbility" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getAbility</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getAllPokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getAllPokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyAbility" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyAbility</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyItem" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyItem</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getFuzzyPokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getFuzzyPokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getItem" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getItem</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getPokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getPokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getPokemonByDexNumber" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getPokemonByDexNumber</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/queries/getTypeMatchup" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getTypeMatchup</span></a></li>
+        </ul></li>
+        <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
+    <span class="bx--side-nav__submenu-title">Types</span>
+    <div class="bx--side-nav__icon bx--side-nav__icon--small bx--side-nav__submenu-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div></button>
+  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Abilities" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Abilities</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/AbilitiesEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">AbilitiesEnum</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Ability" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Ability</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Boolean" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Boolean</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/CatchRate" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">CatchRate</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/EvYields" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">EvYields</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Flavor" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Flavor</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Float" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Float</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Gender" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Gender</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/GenerationalPokemonLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">GenerationalPokemonLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Int" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Int</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Item" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Item</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/ItemsEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">ItemsEnum</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Learnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Learnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/LearnsetLevelUpMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">LearnsetLevelUpMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/LearnsetMove" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">LearnsetMove</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Move" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Move</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/MovesEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">MovesEnum</span></a></li><li class="bx--side-nav__menu-item"><a aria-current="page" href="/graphql-pokemon/types/Pokemon" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Pokemon</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/PokemonEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">PokemonEnum</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/PokemonLearnset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">PokemonLearnset</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/PokemonType" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">PokemonType</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Query" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Query</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/Stats" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">Stats</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/String" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">String</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/TypeEffectiveness" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">TypeEffectiveness</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/TypeMatchup" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">TypeMatchup</span></a></li><li class="bx--side-nav__menu-item"><a href="/graphql-pokemon/types/TypesEnum" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">TypesEnum</span></a></li>
+        </ul></li></ul></nav>
+
+<main id="main-content" style="margin-left: 0; undefined" class="bx--content"><div class="bx--grid"><div class="bx--row"><div class="bx--col">
+
+<section><div class="parent svelte-1ltydza"><h1 id="title" class="header header-base svelte-1ltydza">Pokemon
+    
+<div id="ccs-0.5mfr4fgcarx" class="bx--tag        bx--tag--teal      ">
+    <span>Object</span></div></h1>
+  
+</div>
+
+  <p class="md-paragraph svelte-uzcm98">A Pokémon's entry
+</p>
+
+  <div class="parent svelte-1ltydza"><h2 id="fields" class="header header-base svelte-1ltydza">Fields</h2>
+  <h2 class="header-base header-hashtag svelte-1ltydza"><a href="#fields" class="hashtag svelte-1ltydza">#</a></h2>
+</div>
+
+    
+<div role="table" class="bx--structured-list  bx--structured-list--condensed ">
+<div role="rowgroup" class="bx--structured-list-tbody">
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">abilities</span>
+      
+<div id="ccs-0.m6qfcpx0gt9" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Abilities" class="bx--link     ">Abilities
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.qbiutmxl5xi" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The abilities for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">backSprite</span>
+      
+<div id="ccs-0.6jd6ujkr8gx" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.e104lq2pwtb" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">baseForme</span>
+      
+<div id="ccs-0.3xdu8zv5gsb" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">Base form if this entry describes an alternate form
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">baseSpecies</span>
+      
+<div id="ccs-0.l1q0dblb9m" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">Base species if this entry describes a special form
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">baseStats</span>
+      
+<div id="ccs-0.g5n0e93gjmr" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Stats" class="bx--link     ">Stats
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.h00gbjxcat7" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">Base stats for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">baseStatsTotal</span>
+      
+<div id="ccs-0.v4j7hf70wj" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Int" class="bx--link     ">Int
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.f408junpf3s" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The total of all base stats for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">bulbapediaPage</span>
+      
+<div id="ccs-0.nmhxm075ek" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.k2kuv6zfbwd" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">Bulbapedia page for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">catchRate</span>
+      
+<div id="ccs-0.xvtmtj1eeks" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/CatchRate" class="bx--link     ">CatchRate
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The catch rate data for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">color</span>
+      
+<div id="ccs-0.qo8jcx7yjpp" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.9y615i8vnnd" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The colour of a Pokémon as listed in the Pokedex
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">cosmeticFormes</span>
+      
+<div id="ccs-0.wfoh95foee" class="bx--tag      bx--tag--blue        ">
+    <span>[
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!]</span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">Any other <em>cosmetic</em> forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data.
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">eggGroups</span>
+      
+<div id="ccs-0.st830xccuf" class="bx--tag      bx--tag--blue        ">
+    <span>[
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!]</span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The egg groups a Pokémon is in
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">evYields</span>
+      
+<div id="ccs-0.iktndhjbg3b" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/EvYields" class="bx--link     ">EvYields
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.z11i1f49ld" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">EV yields for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">evolutionLevel</span>
+      
+<div id="ccs-0.ynk6wjp676" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The evolution level, or special method, for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">evolutions</span>
+      
+<div id="ccs-0.jfx6762q4vf" class="bx--tag      bx--tag--blue        ">
+    <span>[
+<a href="/graphql-pokemon/types/Pokemon" class="bx--link     ">Pokemon
+    </a>!]</span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The evolutions for a Pokémon, if any
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">flavorTexts</span>
+      
+<div id="ccs-0.3gm9u58342y" class="bx--tag      bx--tag--blue        ">
+    <span>[
+<a href="/graphql-pokemon/types/Flavor" class="bx--link     ">Flavor
+    </a>!]!</span></div>
+      
+      
+<div id="ccs-0.wblzdivtytq" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The flavor texts for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">forme</span>
+      
+<div id="ccs-0.yi9v2na016g" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The form identifier of a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">formeLetter</span>
+      
+<div id="ccs-0.xozi2032nw" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The single letter identifier of the form
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">gender</span>
+      
+<div id="ccs-0.3xiuvbsfm3c" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Gender" class="bx--link     ">Gender
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.b800323xb6" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The gender data for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">height</span>
+      
+<div id="ccs-0.d8m8hrjhdy8" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Float" class="bx--link     ">Float
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.sj01yv86e88" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The height of a Pokémon in meters
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">isEggObtainable</span>
+      
+<div id="ccs-0.mqj440n4rlf" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Boolean" class="bx--link     ">Boolean
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.ejs81exx0m4" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">Whether the egg of a Pokémon is obtainable
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">key</span>
+      
+<div id="ccs-0.uhlztz3v9x" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/PokemonEnum" class="bx--link     ">PokemonEnum
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.4gnok9u3wil" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The key of the Pokémon as stored in the API
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">learnsets</span>
+      
+<div id="ccs-0.65n2ypi90v6" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/GenerationalPokemonLearnset" class="bx--link     ">GenerationalPokemonLearnset
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The learnset for this pokemon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">levellingRate</span>
+      
+<div id="ccs-0.qbi9wseg9an" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The levelling rate of a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">maximumHatchTime</span>
+      
+<div id="ccs-0.u7qt1ii3ll" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Int" class="bx--link     ">Int
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The maximum number of steps required for the egg of a Pokémon to hatch
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">minimumHatchTime</span>
+      
+<div id="ccs-0.t8brjjae67" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Int" class="bx--link     ">Int
+    </a></span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The minimum number of steps required for the egg of a Pokémon to hatch
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">num</span>
+      
+<div id="ccs-0.m5wif5wrbw" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Int" class="bx--link     ">Int
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.1hb5ldpeg2l" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The dex number for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">otherFormes</span>
+      
+<div id="ccs-0.zps1jjw4f0s" class="bx--tag      bx--tag--blue        ">
+    <span>[
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!]</span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">Any other forms for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">preevolutions</span>
+      
+<div id="ccs-0.f6c74d84wym" class="bx--tag      bx--tag--blue        ">
+    <span>[
+<a href="/graphql-pokemon/types/Pokemon" class="bx--link     ">Pokemon
+    </a>!]</span></div>
+      
+      </p>
+
+    <p class="md-paragraph svelte-uzcm98">The preevolutions for a Pokémon, if any
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">serebiiPage</span>
+      
+<div id="ccs-0.duu95rpmone" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.4b10fec35o5" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">Serebii page for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shinyBackSprite</span>
+      
+<div id="ccs-0.c6ol2gyf34" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.lagujj5uutl" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The shiny back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">shinySprite</span>
+      
+<div id="ccs-0.hi3b66aay9" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.1l45v27ilm9" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">smogonPage</span>
+      
+<div id="ccs-0.8hrgsugitu" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.l0in5exdmi" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">Smogon page for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">smogonTier</span>
+      
+<div id="ccs-0.2zfgzaawqa" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.xs9cxgpli1" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The smogon tier a Pokémon falls under
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">species</span>
+      
+<div id="ccs-0.j5pjuqdc5g" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.08ix5nnzkf8u" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The species name for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">sprite</span>
+      
+<div id="ccs-0.km8gd7hz70o" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/String" class="bx--link     ">String
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.25oph85ao0q" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">types</span>
+      
+<div id="ccs-0.5i1pu5zfnmh" class="bx--tag      bx--tag--blue        ">
+    <span>[
+<a href="/graphql-pokemon/types/PokemonType" class="bx--link     ">PokemonType
+    </a>!]!</span></div>
+      
+      
+<div id="ccs-0.8x8ye9xxf4s" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The types for a Pokémon
+</p>
+
+    </div></div>
+<div role="row" class="bx--structured-list-row ">
+<div role="cell" class=" bx--structured-list-td "><p><span style="font-weight: bold">weight</span>
+      
+<div id="ccs-0.vp7ixk62ce" class="bx--tag      bx--tag--blue        ">
+    <span>
+<a href="/graphql-pokemon/types/Float" class="bx--link     ">Float
+    </a>!</span></div>
+      
+      
+<div id="ccs-0.hs3zzs3fxcu" class="bx--tag     bx--tag--purple         ">
+    <span>Non-null</span></div></p>
+
+    <p class="md-paragraph svelte-uzcm98">The weight of a Pokémon in kilograms
+</p>
+
+    </div></div></div></div>
+
+  </section>
+
+<div class="parent svelte-1ltydza"><h2 id="usages" class="header header-base svelte-1ltydza">Usages</h2>
+  <h2 class="header-base header-hashtag svelte-1ltydza"><a href="#usages" class="hashtag svelte-1ltydza">#</a></h2>
+</div>
+<div class="parent svelte-1ltydza"><h4 id="references" class="header header-base svelte-1ltydza">References</h4>
+  <h4 class="header-base header-hashtag svelte-1ltydza"><a href="#references" class="hashtag svelte-1ltydza">#</a></h4>
+</div>
+
+<ul class="markdown-list-style bx--list--unordered  " style="counter-reset: item 0">
+<li class="markdown-list-item bx--list__item">Field <em>getPokemonByDexNumber</em> from 
+<a href="/graphql-pokemon/types/Query" class="bx--link     ">Query
+    </a></li></ul>
+<ul class="markdown-list-style bx--list--unordered  " style="counter-reset: item 0">
+<li class="markdown-list-item bx--list__item">Field <em>getPokemon</em> from 
+<a href="/graphql-pokemon/types/Query" class="bx--link     ">Query
+    </a></li></ul>
+<ul class="markdown-list-style bx--list--unordered  " style="counter-reset: item 0">
+<li class="markdown-list-item bx--list__item">Field <em>getFuzzyPokemon</em> from 
+<a href="/graphql-pokemon/types/Query" class="bx--link     ">Query
+    </a></li></ul>
+
+<div class="button-wrapper svelte-8qz4j">
+<button type="button" tabindex="0" style="border-radius: 20px" class="bx--btn bx--btn--sm bx--btn--sm bx--btn--ghost">
+    Show more (7)<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" class="bx--btn__icon"><path d="M24.59 16.59L17 24.17 17 4 15 4 15 24.17 7.41 16.59 6 18 16 28 26 18 24.59 16.59z"></path></svg></button>
+</div>
+
+<hr class="footer-hr svelte-19tre3a">
+
+<div class="wrapper svelte-19tre3a"><div class="previous direction-wrapper svelte-19tre3a"><div class="direction svelte-19tre3a"><strong>Previous
+
+          </strong></div>
+      <a href="/graphql-pokemon/types/MovesEnum" class="title svelte-19tre3a"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden class="previous-next-arrow"><path d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"></path></svg></span>
+        <p>MovesEnum</p></a></div>
+
+  <div class="next direction-wrapper svelte-19tre3a"><div class="direction svelte-19tre3a"><strong>Next
+          </strong></div>
+      <a href="/graphql-pokemon/types/PokemonEnum" class="title svelte-19tre3a"><p>PokemonEnum</p>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden class="previous-next-arrow"><path d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"></path></svg></span></a></div>
+</div></div></div></div></main>
+
+
+		<script type="module" data-sveltekit-hydrate="13ob82r">
+			import { start } from "/graphql-pokemon/_app/immutable/start-3c68b456.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 7],
+					params: {type:"Pokemon"},
+					route: {"id":"/types/[type]"},
+					data: [null,null],
+					form: null
+				},
+				paths: {"base":"/graphql-pokemon","assets":"/graphql-pokemon"},
+				target: document.querySelector('[data-sveltekit-hydrate="13ob82r"]').parentNode,
+				version: "1670372709531"
+			});
+		</script>
+	</body>
+</html>
